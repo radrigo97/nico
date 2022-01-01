@@ -12,6 +12,8 @@ const current = document.getElementById('current');
 let previusNumber = null;
 let currentNumber = null;
 const butn = document.querySelector('.button-wrapper > .btn');
+// const getSummury = document.querySelector('.form__summary');
+
 
 
 
@@ -82,9 +84,9 @@ butn.onclick = (event) => {
 
     payments.push(lastValue);
 
-    for(const key of Object.values(payment)) {
-
-    }
+    Object.keys(payment).forEach((el) => {
+       payment[el] = null;
+    });
 
     payments.push(lastValue);
 };
