@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e1884df-f911-4cbc-bbed-3cb683591faa" name="Default Changelist" comment="">
+    <list default="true" id="9e1884df-f911-4cbc-bbed-3cb683591faa" name="Default Changelist" comment="update 02/01/2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/center.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/center.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +65,40 @@
       <workItem from="1640605999834" duration="2728000" />
       <workItem from="1640685003430" duration="17268000" />
       <workItem from="1640764219373" duration="13823000" />
-      <workItem from="1641028620793" duration="4141000" />
+      <workItem from="1641028620793" duration="4829000" />
+      <workItem from="1641043717291" duration="2909000" />
+      <workItem from="1641072969424" duration="587000" />
+      <workItem from="1641115121180" duration="1673000" />
+      <workItem from="1641140003736" duration="2025000" />
+      <workItem from="1641197533779" duration="2145000" />
     </task>
+    <task id="LOCAL-00001" summary="update 01/01/2022">
+      <created>1641034651952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641034651952</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update 01/01/2022" />
+    <MESSAGE value="update 02/01/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 02/01/2022" />
   </component>
 </project>

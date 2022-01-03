@@ -136,7 +136,7 @@
     }
 
     .form__summary-list {
-      list-style: none;
+      list-style-type: none;
 
       .list__item {
         display: flex;
@@ -173,6 +173,7 @@
         position: relative;
         margin-top: 16px;
         padding-top: 16px;
+        list-style-type: none;
 
         p {
           font-size: 16px;

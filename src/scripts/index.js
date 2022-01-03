@@ -12,14 +12,9 @@ const current = document.getElementById('current');
 let previusNumber = null;
 let currentNumber = null;
 const butn = document.querySelector('.button-wrapper > .btn');
-// const getSummury = document.querySelector('.form__summary');
-
-
-
+const getSummury = document.querySelector('.form__summary-list');
 
 const divElement = document.getElementsByClassName('left__company');
-
-
 
 
 companies.onclick = (event) => {
@@ -82,13 +77,22 @@ butn.onclick = (event) => {
     const value = currentNumber - previusNumber;
     const lastValue = value * tarifs.water;
 
+    const copyPaymant = Object.assign({}, payment);
+
+    console.log('cope', copyPaymant);
+
     payments.push(lastValue);
 
-    Object.keys(payment).forEach((el) => {
+    Object.keys(payment).map((el) => {
        payment[el] = null;
     });
-
     payments.push(lastValue);
+
+            getSummury.insertAdjacentHTML('beforebegin', `<li class="list__item">
+                <p><span class="list__item-label">${copyPaymant.materId}</span>
+                  <span class="price">$ <b>${lastValue}</b></span>
+                </p>
+              </li>`);
 };
 
 console.log(payments);
