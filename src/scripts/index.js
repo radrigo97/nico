@@ -13,8 +13,10 @@ let previusNumber = null;
 let currentNumber = null;
 const butn = document.querySelector('.button-wrapper > .btn');
 const getSummury = document.querySelector('.form__summary-list');
-
+const copyPaymant = Object.assign({}, payment);
 const divElement = document.getElementsByClassName('left__company');
+const price = document.querySelector('.price > b');
+console.log(price.getAttribute('priceId'));
 
 
 companies.onclick = (event) => {
@@ -49,10 +51,8 @@ companies.onclick = (event) => {
 };
 
 meters.onchange = (event) => {
-    const id = event.target.querySelector('option');
-    const searchValue = id.getAttribute('value');
-
-    return payment.materId = searchValue;
+    payment.materId = event.target.value;
+    copyPaymant.materId = event.target.value;
 };
 
 previous.oninput = (event) => {
@@ -77,11 +77,6 @@ butn.onclick = (event) => {
     const value = currentNumber - previusNumber;
     const lastValue = value * tarifs.water;
 
-    const copyPaymant = Object.assign({}, payment);
-
-    console.log('cope', copyPaymant);
-
-    payments.push(lastValue);
 
     Object.keys(payment).map((el) => {
        payment[el] = null;
@@ -93,6 +88,7 @@ butn.onclick = (event) => {
                   <span class="price">$ <b>${lastValue}</b></span>
                 </p>
               </li>`);
+
 };
 
 console.log(payments);
